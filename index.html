@@ -5,10 +5,23 @@
   </head>
   <body>
 <canvas id='c' width='640' height='640'></canvas>
-    <script>
+<script>
 var c=document.getElementById('c').getContext('2d')
-c.fillStyle='#000000'
-c.fillRect(0,0,640,640)
-    </script>
+	c.fillStyle='#000000'
+	c.fillRect(0,0,640,640)
+	function lerp(a,b,c){return a+(b-a)*c}
+	var x=320
+	var y=320
+	var h=0
+	var v=0
+	var a=[{x:320,y:320,h:0,v:0,d:-1}]
+	
+	setInterval(function(){
+	//Frame
+	
+	
+	
+	},33)
+</script>
   </body>
 </html>
