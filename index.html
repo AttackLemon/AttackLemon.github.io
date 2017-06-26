@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Websight</title>
-  </head>
-  <body>
+<head>
+<title>Websight</title>
+</head>
+<body>
 <canvas id='c' width='640' height='640'></canvas>
 <script>
 var c=document.getElementById('c').getContext('2d')
-	c.fillStyle='#000000'
-	c.fillRect(0,0,640,640)
-	function lerp(a,b,c){return a+(b-a)*c}
-	var x=320
-	var y=320
-	var h=0
-	var v=0
-	var a=[{x:320,y:320,h:0,v:0,d:-1}]
-	
-	setInterval(function(){
-	//Frame
-	
-	
-	
-	},33)
+c.fillStyle='#000000'
+c.fillRect(0,0,640,640)
+function lerp(a,b,c){return a+(b-a)*c}
+var x=320
+var y=320
+var h=0
+var v=0
+var a=[{x:320,y:320,h:0,v:0,d:-1}]
+//====================================================================Functions
+function box(a,b,w,cc){c.fillStyle=cc;c.fillRect(a-w/2,b-w/2,w,w)}
+function ball(a,b,w,cc){
+c.beginPath()
+c.fillStyle=cc
+c.arc(a,b,w,0,2*Math.PI)
+c.fill()}
+function line(a,b,x,y,cc){
+c.strokeStyle=cc
+c.fillStyle=cc
+c.beginPath()
+c.moveTo(a,b)
+c.lineTo(x,y)
+c.stroke()}
+
+
+setInterval(function(){
+//Frame
+
+
+},33)
 </script>
-  </body>
+</body>
 </html>
