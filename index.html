@@ -7,7 +7,7 @@
 <canvas id='c' width='640' height='640'></canvas>
 <script>
 var c=document.getElementById('c').getContext('2d')
-c.fillStyle='#000000'
+c.fillStyle='rgb(200,200,200)'
 c.fillRect(0,0,640,640)
 function lerp(a,b,c){return a+(b-a)*c}
 var x=320
@@ -33,7 +33,7 @@ c.stroke()}
 
 setInterval(function(){
 //Frame
-c.fillStyle='#000000'
+c.fillStyle='rgb(200,200,200)'
 c.fillRect(0,0,640,640)
 c.fillStyle='#ffffff'
 c.fillRect(160,160,480,480)
